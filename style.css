@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul ol li {
+    font-style: normal;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10%;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(#F5E7D3 0%, #F5E7D3 127px, #F5E7D3 127px, #fff 100%);
+}
+
+path {
+    fill: #ECCEA7;
+    stroke: #fff;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+path:hover {
+    fill: #FA9E27;
+}
+
+.cria-card {
+    min-width: 400px;
+    height: 600px;
+    overflow-y: scroll;
+    background-color: #F1DDC2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cria-card::-webkit-scrollbar {
+    background-color: #ECCEA7;
+}
+
+.cria-card::-webkit-scrollbar-thumb {
+    background-color: #FA9E27;
+}
+
+.cria-header {
+    display: flex;
+}
+
+.sigla {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #FA9E27;
+    border-radius: 50%;
+    border: #fff 5px solid;
+    margin: 30px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dados-header {
+    padding: 30px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.nome-estado {
+    font-size: 2.5rem;
+    color: #FA9E27;
+}
+
+.capital-estado {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.regiao-estado {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.lista-cidades {
+    margin: 35px;
+    overflow: hidden;
+}
+
+.lista-cidades ul {
+    list-style: none;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 15px;
+}
